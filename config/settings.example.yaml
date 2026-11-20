@@ -1,0 +1,57 @@
+film:
+  film_id: "TOXIC_2026"
+  imdb_id: "tt27530512"
+  canonical_title: "Toxic: A Fairytale for Grown-Ups"
+  release_year: 2026
+  director: "Geetu Mohandas"
+  starring: "Yash"
+
+imdb:
+  base_url: "https://datasets.imdbws.com/"
+  files:
+    - "title.basics.tsv.gz"
+    - "title.ratings.tsv.gz"
+  raw_dir: "data/raw/imdb"
+  staging_dir: "data/staging/imdb"
+  processed_dir: "data/processed/imdb"
+  chunk_size: 100000
+
+reddit:
+  enabled: false  # Set to true once OAuth credentials are configured
+  subreddits:
+    - "bollywood"
+    - "tollywood"
+    - "india"
+    - "movies"
+    - "worldcinema"
+    - "netflix"
+  search_terms:
+    - "Toxic Yash movie"
+    - "Toxic Fairytale Grown-Ups"
+    - "tt27530512"
+    - "Toxic Geetu Mohandas"
+  date_window:
+    start: "2026-01-01"
+    end: "2026-12-31"
+  max_threads: 100
+  max_comments_per_thread: 500
+  request_delay_seconds: 2.0
+  raw_dir: "data/raw/reddit"
+  staging_dir: "data/staging/reddit"
+  processed_dir: "data/processed/reddit"
+
+critics:
+  raw_dir: "data/raw/critics"
+  staging_dir: "data/staging/critics"
+  processed_dir: "data/processed/critics"
+  manual_template: "data/raw/critics/manual_entry_template.csv"
+  request_delay_seconds: 3.0
+  user_agent: "ToxicMovieResearch/1.0 (academic, non-commercial)"
+
+database:
+  name: "toxic_case_study"
+  schema_file: "sql/schema.sql"
+
+logging:
+  log_dir: "logs"
+  level: "INFO"

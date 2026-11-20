@@ -1,0 +1,63 @@
+# Environment
+.env
+*.env
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Data directories (not committed — too large and may contain sensitive data)
+data/raw/
+data/staging/
+data/processed/
+
+# Log files
+logs/*.log
+logs/*.txt
+
+# IMDb dataset files
+*.tsv.gz
+*.tsv
+
+# Packaging
+*.egg-info/
+dist/
+build/
+*.egg
+MANIFEST
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+
+# Config with secrets (keep only the .example version)
+config/settings.yaml
+film_identity.md

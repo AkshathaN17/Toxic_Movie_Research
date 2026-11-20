@@ -1,0 +1,9 @@
+timestamp,source,operation,records_collected,records_failed,status,notes
+2026-11-20T18:24:41.419885+00:00,critics_manual,load_template,0,0,template_empty,Template created; awaiting manual data entry.
+2026-11-20T18:28:09.647427+00:00,IMDb non-commercial datasets,download_and_extract,1,0,success,"basics=title.basics.tsv.gz, ratings=title.ratings.tsv.gz"
+2026-11-20T18:31:23.823748+00:00,reddit_praw,credential_check,0,0,disabled,OAuth credentials not configured.
+2026-11-20T18:37:15.431959+00:00,critics_manual,stage_entries,7,0,success,staged to data/staging/critics
+2026-11-20T18:56:10.656984+00:00,Wikipedia Action API,fetch_and_extract,1,0,success,"page_id=78832995, rev_id=1386737157, title=Toxic (2026 film)"
+2026-11-20T19:03:59.644470+00:00,Wikipedia Action API,fetch_and_extract,1,0,success,"page_id=78832995, rev_id=1386737157, title=Toxic (2026 film)"
+2026-11-20T19:04:52.032382+00:00,IMDb non-commercial datasets,download_and_extract,1,0,success,"basics=title.basics.tsv.gz, ratings=title.ratings.tsv.gz"
+2026-11-20T19:05:04.836366+00:00,critics_manual,stage_entries,7,0,success,staged to data/staging/critics
